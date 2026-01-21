@@ -2,8 +2,8 @@
 title: "Home"
 ---
 
-Welcome! I'm a Data Scientist passionate about turning complex data into actionable insights. With expertise in machine learning, statistical analysis, and data visualization, I help organizations make data-driven decisions.
+Data Scientist at Cubist Systematic Strategies. PhD student in Economics at Northwestern University, researching macroeconomics, monetary economics, and international finance.
 
-My work spans predictive modeling, natural language processing, and building scalable data pipelines. I believe in the power of clean, well-documented code and reproducible research.
+Previously Data Scientist at the World Bank, where I developed causal inference methods using graph theory and built spatial statistical models for economic predictions. Before that, Research Analyst at the Peterson Institute for International Economics, working with Olivier Blanchard on macroeconomic policy research.
 
-When I'm not diving into datasets, you'll find me exploring new technologies, contributing to open-source projects, or capturing moments through photography.
+Background combining general culture from Sciences Po Paris and mathematical training from Paris VI (Sorbonne).

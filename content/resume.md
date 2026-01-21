@@ -2,8 +2,8 @@
 title: "Resume"
 ---
 
-<embed class="pdf-viewer" src="/resume/curriculum_vitae_Thomas_Pellet.pdf" type="application/pdf">
+<object class="pdf-viewer" data="/pellet-personal-website/resume/curriculum_vitae_Thomas_Pellet.pdf" type="application/pdf">
+  <p>PDF cannot be displayed. <a href="/pellet-personal-website/resume/curriculum_vitae_Thomas_Pellet.pdf">Download the resume</a> instead.</p>
+</object>
 
-<a href="/resume/curriculum_vitae_Thomas_Pellet.pdf" download class="download-link btn">Download PDF</a>
-
-*This resume auto-syncs from my Interviews repository.*
+<a href="/pellet-personal-website/resume/curriculum_vitae_Thomas_Pellet.pdf" download class="download-link btn">Download PDF</a>

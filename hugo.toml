@@ -1,11 +1,11 @@
 baseURL = 'https://tpellet.github.io/pellet-personal-website/'
 languageCode = 'en-us'
-title = 'Thomas Pellet - Data Scientist'
+title = 'Thomas Pellet'
 theme = 'minimal-portfolio'
 
 [params]
   author = "Thomas Pellet"
-  description = "Data Scientist specializing in machine learning and analytics"
+  description = "Data Scientist | PhD Economics, Northwestern"
   github = "https://github.com/tpellet"
   linkedin = "https://linkedin.com/in/thomaspellet"
   email = "pellet.thomas@gmail.com"
