@@ -1,0 +1,9 @@
+name = "Minimal Portfolio"
+license = "MIT"
+licenselink = "https://github.com/tpellet/pellet-personal-website/blob/main/LICENSE"
+description = "A minimalist portfolio theme for Hugo"
+homepage = "https://github.com/tpellet/pellet-personal-website"
+min_version = "0.100.0"
+
+[author]
+  name = "Thomas Pellet"

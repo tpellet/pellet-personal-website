@@ -1,0 +1,16 @@
+{{ define "main" }}
+<section class="hero">
+  <h1>{{ .Site.Params.author }}</h1>
+  <p class="tagline">{{ .Site.Params.description }}</p>
+</section>
+
+<section class="bio">
+  {{ .Content }}
+</section>
+
+<section class="social-links">
+  {{ with .Site.Params.github }}<a href="{{ . }}" class="btn" target="_blank" rel="noopener">GitHub</a>{{ end }}
+  {{ with .Site.Params.linkedin }}<a href="{{ . }}" class="btn" target="_blank" rel="noopener">LinkedIn</a>{{ end }}
+  <a href="{{ "resume/" | relURL }}" class="btn">Resume</a>
+</section>
+{{ end }}

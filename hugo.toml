@@ -1,0 +1,34 @@
+baseURL = 'https://tpellet.github.io/pellet-personal-website/'
+languageCode = 'en-us'
+title = 'Thomas Pellet - Data Scientist'
+theme = 'minimal-portfolio'
+
+[params]
+  author = "Thomas Pellet"
+  description = "Data Scientist specializing in machine learning and analytics"
+  github = "https://github.com/tpellet"
+  linkedin = "https://linkedin.com/in/thomaspellet"
+  email = "pellet.thomas@gmail.com"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Publications"
+    url = "/publications/"
+    weight = 2
+  [[menu.main]]
+    name = "Gallery"
+    url = "/gallery/"
+    weight = 3
+  [[menu.main]]
+    name = "Resume"
+    url = "/resume/"
+    weight = 4
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
