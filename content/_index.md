@@ -6,4 +6,4 @@ Data Scientist at Cubist Systematic Strategies. PhD in Economics from Northweste
 
 Previously at Bloomberg, the World Bank, and the Peterson Institute for International Economics, where I worked with Olivier Blanchard on macroeconomic policy research.
 
-Background combining general culture from Sciences Po Paris and mathematical training from Paris VI (Sorbonne).
+Public Policy at Sciences Po Paris, Business at HEC Paris, Mathematics at UPMC.
