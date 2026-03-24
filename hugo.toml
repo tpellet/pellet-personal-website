@@ -24,9 +24,13 @@ theme = 'minimal-portfolio'
     url = "/gallery/"
     weight = 3
   [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 4
+  [[menu.main]]
     name = "Resume"
     url = "/resume/"
-    weight = 4
+    weight = 5
 
 [markup]
   [markup.goldmark]

@@ -1,0 +1,35 @@
+- name: Testify
+  description: Automated testing framework for validating data pipelines and ML model outputs with configurable assertions.
+  tech:
+    - Python
+    - pytest
+  url: https://github.com/tpellet/Testify
+
+- name: Housesearch
+  description: Real estate search tool that aggregates listings and applies custom filters to find the best matches.
+  tech:
+    - Python
+    - Pandas
+  url: https://github.com/tpellet/Housesearch
+
+- name: OnePlace
+  description: Unified dashboard bringing together multiple data sources into a single interface for streamlined workflows.
+  tech:
+    - JavaScript
+    - React
+  url: https://github.com/tpellet/OnePlace
+
+- name: REVE NYC
+  description: Interactive visualization and analysis platform exploring New York City event and venue data.
+  tech:
+    - Python
+    - Flask
+    - D3.js
+  url: https://github.com/tpellet/REVE-NYC
+
+- name: lumiere
+  description: Lightweight image processing and computer vision toolkit for rapid prototyping and experimentation.
+  tech:
+    - Python
+    - OpenCV
+  url: https://github.com/tpellet/lumiere
