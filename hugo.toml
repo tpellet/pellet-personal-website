@@ -9,6 +9,7 @@ theme = 'minimal-portfolio'
   github = "https://github.com/tpellet"
   linkedin = "https://linkedin.com/in/thomaspellet"
   email = "pellet.thomas@gmail.com"
+  image = "images/og-default.png"
 
 [menu]
   [[menu.main]]
