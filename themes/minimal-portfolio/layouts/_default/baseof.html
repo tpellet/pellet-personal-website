@@ -9,6 +9,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    // Prevent flash of wrong theme on page load
+    (function() {
+      var stored = localStorage.getItem('theme-preference');
+      if (stored === 'dark' || stored === 'light') {
+        document.documentElement.setAttribute('data-theme', stored);
+      }
+    })();
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -19,6 +28,7 @@
         <li><a href="{{ .URL | relURL }}" {{ if eq $.RelPermalink .URL }}class="active"{{ end }}>{{ .Name }}</a></li>
         {{ end }}
       </ul>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">&#127769;</button>
     </nav>
   </header>
 
@@ -34,5 +44,6 @@
     </div>
     <p>&copy; {{ now.Year }} {{ .Site.Params.author }}</p>
   </footer>
+  <script src="{{ "js/theme-toggle.js" | relURL }}"></script>
 </body>
 </html>
