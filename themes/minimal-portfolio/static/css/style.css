@@ -9,6 +9,26 @@
   --spacing: 2rem;
 }
 
+/* Dark mode: system preference (when user hasn't explicitly chosen light) */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg: #121212;
+    --color-text: #e0e0e0;
+    --color-muted: #999;
+    --color-accent: #4d9fff;
+    --color-border: #333;
+  }
+}
+
+/* Dark mode: explicit user choice */
+[data-theme="dark"] {
+  --color-bg: #121212;
+  --color-text: #e0e0e0;
+  --color-muted: #999;
+  --color-accent: #4d9fff;
+  --color-border: #333;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -251,7 +271,7 @@ a:hover {
 
 .project-card:hover {
   border-color: var(--color-accent);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   opacity: 1;
 }
 
@@ -280,6 +300,24 @@ a:hover {
   background: var(--color-border);
   border-radius: 3px;
   color: var(--color-muted);
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0.4rem 0.5rem;
+  font-size: 1.1rem;
+  line-height: 1;
+  color: var(--color-text);
+  transition: border-color 0.2s;
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  border-color: var(--color-accent);
 }
 
 /* Responsive */
