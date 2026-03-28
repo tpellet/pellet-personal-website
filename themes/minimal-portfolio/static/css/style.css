@@ -9,24 +9,27 @@
   --spacing: 2rem;
 }
 
-/* Dark mode: system preference (when user hasn't explicitly chosen light) */
+/* Dark mode: applied via data-theme attribute set by inline script (handles
+   both explicit user choice and prefers-color-scheme system preference). */
+[data-theme="dark"] {
+  color-scheme: dark;
+  --color-bg: #121212;
+  --color-text: #e0e0e0;
+  --color-muted: #999;
+  --color-accent: #4d9fff;
+  --color-border: #333;
+}
+
+/* No-JS fallback: respect system dark preference when JS is unavailable */
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
     --color-bg: #121212;
     --color-text: #e0e0e0;
     --color-muted: #999;
     --color-accent: #4d9fff;
     --color-border: #333;
   }
-}
-
-/* Dark mode: explicit user choice */
-[data-theme="dark"] {
-  --color-bg: #121212;
-  --color-text: #e0e0e0;
-  --color-muted: #999;
-  --color-accent: #4d9fff;
-  --color-border: #333;
 }
 
 * {
@@ -271,7 +274,7 @@ a:hover {
 
 .project-card:hover {
   border-color: var(--color-accent);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   opacity: 1;
 }
 

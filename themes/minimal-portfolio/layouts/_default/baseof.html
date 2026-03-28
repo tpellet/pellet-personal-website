@@ -13,8 +13,14 @@
     // Prevent flash of wrong theme on page load
     (function() {
       var stored = localStorage.getItem('theme-preference');
+      var theme;
       if (stored === 'dark' || stored === 'light') {
-        document.documentElement.setAttribute('data-theme', stored);
+        theme = stored;
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        theme = 'dark';
+      }
+      if (theme) {
+        document.documentElement.setAttribute('data-theme', theme);
       }
     })();
   </script>
