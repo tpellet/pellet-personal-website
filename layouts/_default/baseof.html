@@ -7,6 +7,10 @@
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   {{ partial "head.html" . }}
   <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+  <script>
+    // Apply theme before first paint to prevent flash of wrong colors
+    (function(){var t=localStorage.getItem('theme-preference');if(!t){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)})();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -20,6 +24,7 @@
         <li><a href="{{ .URL | relURL }}" {{ if eq $.RelPermalink .URL }}class="active"{{ end }}>{{ .Name }}</a></li>
         {{ end }}
       </ul>
+      <button class="theme-toggle" hidden aria-label="Toggle dark mode">&#127769;</button>
     </nav>
   </header>
 
@@ -35,5 +40,7 @@
     </div>
     <p>&copy; {{ now.Year }} {{ .Site.Params.author }}</p>
   </footer>
+
+  <script src="{{ "js/theme-toggle.js" | relURL }}"></script>
 </body>
 </html>
