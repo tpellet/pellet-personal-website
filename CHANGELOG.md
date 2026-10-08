@@ -38,3 +38,4 @@
 - Served licensed fonts locally and kept the résumé PDF unchanged.
 - Added TypeScript and Chromium, mobile, and WebKit browser gates for both GitHub Pages and root-domain output.
 - Pinned Hugo extended 0.165.0 and prepared Vercel and Cloudflare Pages hosting configuration.
+- Updated official GitHub Actions to releases using Node.js 24.
