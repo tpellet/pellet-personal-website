@@ -51,6 +51,24 @@ test('resume links deliver a real PDF', async ({ page, request, baseURL }) => {
   expect((await response.body()).subarray(0, 5).toString()).toBe('%PDF-');
 });
 
+test('Proofwise is featured with its App Store link and local artwork', async ({ page, request, baseURL }) => {
+  for (const route of ['', 'projects/']) {
+    await page.goto(new URL(route, baseURL).href);
+    const card = page.locator('.project-proofwise');
+    await expect(card).toBeVisible();
+    await expect(page.locator('.project-card').first()).toHaveClass(/project-proofwise/);
+    await expect(card.locator('h3')).toHaveText('Proofwise');
+    const storeLink = card.getByRole('link', { name: 'View Proofwise on the App Store' });
+    await expect(storeLink).toHaveAttribute('href', 'https://apps.apple.com/us/app/proofwise/id6791989723');
+    const artwork = card.locator('img');
+    await artwork.scrollIntoViewIfNeeded();
+    await expect.poll(() => artwork.evaluate((image: HTMLImageElement) => image.complete && image.naturalWidth > 0)).toBe(true);
+    const image = await request.get(new URL((await artwork.getAttribute('src'))!, page.url()).href);
+    expect(image.status()).toBe(200);
+    expect(image.headers()['content-type']).toContain('image/png');
+  }
+});
+
 test('theme selection persists after navigation and reload', async ({ page, baseURL }) => {
   await page.goto(baseURL!);
   const before = await page.locator('html').getAttribute('data-theme');

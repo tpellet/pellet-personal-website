@@ -39,3 +39,10 @@
 - Added TypeScript and Chromium, mobile, and WebKit browser gates for both GitHub Pages and root-domain output.
 - Pinned Hugo extended 0.165.0 and prepared Vercel and Cloudflare Pages hosting configuration.
 - Updated official GitHub Actions to releases using Node.js 24.
+
+## 2026-10-07 — Proofwise and wording review
+
+- Featured Proofwise on the home and software pages with its app icon and verified App Store link.
+- Revised public copy following an Astra xhigh review against original writing and editorial feedback: concrete definitions, work before credentials, and direct descriptions of the software.
+- Corrected the tax-policy research summary to describe estimated effects rather than realized causal effects.
+- Added browser coverage for Proofwise’s placement, artwork, and App Store link.

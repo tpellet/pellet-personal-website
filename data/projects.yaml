@@ -1,21 +1,35 @@
+- name: Proofwise
+  kind: Personal experiments
+  role: iPhone app
+  visual: proofwise
+  description: An iPhone app for N-of-1 experiments. Record a baseline, track an intervention, and compare the results with estimates of uncertainty.
+  tech:
+    - iOS
+    - Apple Health
+    - Statistics
+  url: https://apps.apple.com/us/app/proofwise/id6791989723
+  link_label: View Proofwise on the App Store
+
 - name: jevify
   kind: Developer tools
   role: Created by me
   visual: terminal
-  description: Find the line that explains a failed build, or describe the test, branch, or commit you need. A semantic command-line tool that fits into the commands you already use.
+  description: A command-line tool that finds the error in build output, or a test, branch, or commit from your description.
   tech:
     - Rust
     - CLI
     - Semantic search
   url: https://github.com/tpellet/jevify
+  link_label: View jevify on GitHub
 
 - name: DaVinci Resolve MCP
   kind: Creative tools
   role: Contributed fork
   visual: timeline
-  description: Connecting AI assistants to DaVinci Resolve through its scripting API. My contributed fork of Samuel Gursky’s open-source project for editing, media organization, and render workflows.
+  description: An MCP server that lets AI assistants work in DaVinci Resolve. I contribute to a fork of Samuel Gursky’s project for editing, organizing media, and rendering.
   tech:
     - Python
     - MCP
     - DaVinci Resolve
   url: https://github.com/tpellet/davinci-resolve-mcp
+  link_label: View the DaVinci Resolve MCP fork on GitHub

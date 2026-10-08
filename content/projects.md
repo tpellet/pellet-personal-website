@@ -1,5 +1,5 @@
 ---
 title: "Software"
-description: "Public software by Thomas Pellet: semantic command-line tools and contributions to creative workflows."
+description: "Software by Thomas Pellet: Proofwise for iPhone, jevify for the command line, and contributions to DaVinci Resolve MCP."
 layout: "projects"
 ---

@@ -1,10 +1,10 @@
 ---
 title: "Home"
-description: "Thomas Pellet is a data scientist and economist, with a PhD from Northwestern University. Explore his public software and economics research."
+description: "Thomas Pellet’s software and economics research, including Proofwise, command-line tools, and work on production networks."
 ---
 
-I’m a data scientist at Cubist Systematic Strategies and hold a PhD in Economics from Northwestern University.
+I’m a data scientist at Cubist Systematic Strategies.
 
-Previously, I worked at Bloomberg, the World Bank, and the Peterson Institute for International Economics, where I collaborated with Olivier Blanchard on macroeconomic policy research.
+Before that, I worked at Bloomberg, the World Bank, and the Peterson Institute for International Economics. At Peterson, I worked with Olivier Blanchard on macroeconomic policy research.
 
-My education spans public policy at Sciences Po Paris, business at HEC Paris, and mathematics at UPMC.
+I have a PhD in Economics from Northwestern University. I also studied public policy at Sciences Po Paris, management at HEC Paris, and mathematics at UPMC.

@@ -5,7 +5,7 @@ theme = 'minimal-portfolio'
 
 [params]
   author = "Thomas Pellet"
-  description = "Data scientist and economist. Software, research, and a PhD in Economics from Northwestern University."
+  description = "Thomas Pellet’s software and economics research, including Proofwise, command-line tools, and work on production networks."
   github = "https://github.com/tpellet"
   linkedin = "https://linkedin.com/in/thomaspellet"
   email = "pellet.thomas@gmail.com"
