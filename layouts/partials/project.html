@@ -1,0 +1,19 @@
+<article class="project-card project-{{ .visual }}">
+  <div class="project-visual" aria-hidden="true">
+    {{ if eq .visual "terminal" }}
+    <div class="terminal-window">
+      <div class="terminal-top"><span class="terminal-dots"><i></i><i></i><i></i></span><span>jevify</span><span>⌘</span></div>
+      <div class="terminal-body"><div><span class="terminal-prompt">$</span> cargo test 2&gt;&amp;1 | jevify why</div><div class="terminal-output">Compiling buildfail…</div><div class="terminal-output">300 warnings, one error.</div><div class="terminal-result"><span>›</span> error[E0425]: cannot find value<br><span class="terminal-indent">`conifg` in this scope</span></div><div class="terminal-hint">The line you were looking for.</div></div>
+    </div>
+    {{ else }}
+    <div class="edit-timeline"><div class="timeline-top"><span>DaVinci Resolve</span><span class="timeline-badge">MCP</span></div><div class="timeline-ruler"><span>00:00</span><span>00:15</span><span>00:30</span><span>00:45</span></div><div class="timeline-track track-video"><span>V1</span><i></i><i></i><i></i></div><div class="timeline-track track-audio"><span>A1</span><i></i></div><div class="timeline-playhead"></div><div class="timeline-command">Organize. Edit. Render.</div></div>
+    {{ end }}
+  </div>
+  <div class="project-info">
+    <div class="project-meta"><span>{{ .kind }}</span><span>{{ .role }}</span></div>
+    <h3><a href="{{ .url }}">{{ .name }}<svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a></h3>
+    <p>{{ .description }}</p>
+    <ul class="project-tech" aria-label="Technologies">{{ range .tech }}<li>{{ . }}</li>{{ end }}</ul>
+    <a class="text-link" href="{{ .url }}">Explore {{ .name }} on GitHub</a>
+  </div>
+</article>

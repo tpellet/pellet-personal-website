@@ -1,0 +1,12 @@
+{{ define "main" }}
+<article class="single-page publications-page">
+  <div class="page-heading"><h1>{{ .Title }}<span class="name-period">.</span></h1><div class="page-description">{{ .Content }}</div></div>
+  <div class="publication-toolbar" hidden>
+    <div class="publication-filters" role="group" aria-label="Filter publications"><button class="publication-filter" data-filter="all" aria-pressed="true">All writing</button><button class="publication-filter" data-filter="research" aria-pressed="false">Research</button><button class="publication-filter" data-filter="policy" aria-pressed="false">Policy</button></div>
+    <p id="publication-status" role="status" aria-live="polite">{{ len hugo.Data.publications }} publications</p>
+  </div>
+  <h2 class="sr-only">Publications</h2>
+  <div class="publications-list">{{ range hugo.Data.publications }}{{ partial "publication.html" . }}{{ end }}</div>
+  <div class="page-postscript"><a class="text-link" href="https://scholar.google.com/citations?user=MJsEg94AAAAJ&amp;hl=en">Google Scholar<svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a><a class="text-link" href="https://www.piie.com/experts/former-research-staff/thomas-pellet">PIIE profile<svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a></div>
+</article>
+{{ end }}

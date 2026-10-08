@@ -1,36 +1,33 @@
 baseURL = 'https://tpellet.github.io/pellet-personal-website/'
-languageCode = 'en-us'
+locale = 'en-US'
 title = 'Thomas Pellet'
 theme = 'minimal-portfolio'
 
 [params]
   author = "Thomas Pellet"
-  description = "Data Scientist | PhD Economics, Northwestern"
+  description = "Data scientist and economist. Software, research, and a PhD in Economics from Northwestern University."
   github = "https://github.com/tpellet"
   linkedin = "https://linkedin.com/in/thomaspellet"
   email = "pellet.thomas@gmail.com"
+  resume = "resume/curriculum_vitae_Thomas_Pellet.pdf"
 
 [menu]
   [[menu.main]]
-    name = "Home"
-    url = "/"
+    name = "Software"
+    pageRef = "/projects"
     weight = 1
   [[menu.main]]
-    name = "Publications"
-    url = "/publications/"
+    name = "Research"
+    pageRef = "/publications"
     weight = 2
   [[menu.main]]
-    name = "Gallery"
-    url = "/gallery/"
+    name = "Résumé"
+    pageRef = "/resume"
     weight = 3
-  [[menu.main]]
-    name = "Projects"
-    url = "/projects/"
-    weight = 4
-  [[menu.main]]
-    name = "Resume"
-    url = "/resume/"
-    weight = 5
+
+[outputs]
+  home = ["HTML"]
+  section = ["HTML"]
 
 [markup]
   [markup.goldmark]

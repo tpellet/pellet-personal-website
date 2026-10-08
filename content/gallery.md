@@ -1,14 +1,8 @@
 ---
 title: "Gallery"
+description: "Photography and film by Thomas Pellet."
 ---
 
-*Coming soon.*
+Photography and film are part of my life outside research and software. I haven’t published a collection here yet.
 
-<!--
-To add a Google Photos gallery:
-1. Go to Google Photos and create/open an album
-2. Click Share → Create link
-3. Replace the iframe below with the album URL + /embed
-
-<iframe class="gallery-embed" src="https://photos.google.com/share/ALBUM_ID/embed" allowfullscreen></iframe>
--->
+In the meantime, my public software includes contributions to tools for working with DaVinci Resolve. [Explore the repository](https://github.com/tpellet/davinci-resolve-mcp).

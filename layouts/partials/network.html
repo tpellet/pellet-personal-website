@@ -1,0 +1,22 @@
+<figure class="network-figure">
+  <div class="network-art">
+    <svg data-network id="production-network" viewBox="0 0 580 530" fill="none" aria-hidden="true">
+      <circle class="network-orbit" cx="294" cy="269" r="205"/>
+      <circle class="network-orbit" cx="294" cy="269" r="132"/>
+      <g class="network-lines">
+        <path d="M88 270 179 134 353 91 483 218 446 408 280 463 88 270 300 260 179 134M300 260 353 91M300 260 483 218M300 260 446 408M300 260 280 463M179 134 446 408M88 270 483 218M353 91 280 463M88 270 446 408"/>
+        <path d="M179 134 131 396 280 463M131 396 300 260M483 218 511 341 446 408"/>
+      </g>
+      <g class="network-trace"><path pathLength="1" d="M88 270 300 260 446 408"/></g>
+      <g class="network-node node-small"><circle cx="179" cy="134" r="17"/><circle cx="131" cy="396" r="11"/><circle cx="280" cy="463" r="17"/><circle cx="511" cy="341" r="9"/></g>
+      <g class="network-node node-medium"><circle cx="353" cy="91" r="29"/><circle cx="483" cy="218" r="26"/></g>
+      <g class="network-node node-households"><circle cx="88" cy="270" r="38"/><circle class="node-core" cx="88" cy="270" r="6"/></g>
+      <g class="network-node node-production"><circle cx="300" cy="260" r="54"/><circle class="node-core" cx="300" cy="260" r="9"/></g>
+      <g class="network-node node-markets"><circle cx="446" cy="408" r="43"/><circle class="node-core" cx="446" cy="408" r="6"/></g>
+      <g class="network-labels"><text x="88" y="327" text-anchor="middle">Households</text><text x="300" y="334" text-anchor="middle">Production</text><text x="446" y="473" text-anchor="middle">Markets</text></g>
+      <g class="network-detail"><path d="M26 49h20m-10-10v20M517 483h20m-10-10v20"/><circle cx="520" cy="63" r="3"/><circle cx="55" cy="449" r="3"/></g>
+    </svg>
+    <button class="network-toggle" hidden aria-pressed="false" aria-controls="production-network"><span class="network-toggle-dot" aria-hidden="true"></span><span>Trace a connection</span></button>
+  </div>
+  <figcaption>An illustration inspired by <a href="{{ "publications/" | relURL }}#rigid-production-networks">Rigid Production Networks</a>.</figcaption>
+</figure>

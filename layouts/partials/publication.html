@@ -1,0 +1,8 @@
+<article class="publication-entry" data-category="{{ .category }}" id="{{ .title | anchorize }}">
+  <div class="publication-meta"><span>{{ .publication }}</span><time datetime="{{ .year }}">{{ .year }}</time></div>
+  <h3><a href="{{ (index .links 0).url }}">{{ .title }}</a></h3>
+  <p class="publication-authors">{{ .authors }}</p>
+  <p class="publication-detail">{{ .detail }}</p>
+  <p class="publication-description">{{ .description }}</p>
+  <div class="publication-links">{{ range .links }}<a class="text-link" href="{{ .url }}">{{ .label }}<svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a>{{ end }}</div>
+</article>

@@ -1,16 +1,27 @@
 {{ define "main" }}
-<section class="hero">
-  <h1>{{ .Site.Params.author }}</h1>
-  <p class="tagline">{{ .Site.Params.description }}</p>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <h1 id="hero-title"><span>Thomas </span><span>Pellet<span class="name-period" aria-hidden="true">.</span></span></h1>
+    <p class="hero-role">Data scientist &amp; economist</p>
+    <p class="hero-description">I work with data, build software, and study how economies connect.</p>
+    <div class="hero-actions"><a class="btn btn-primary" href="#software">Explore my work<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a><a class="text-link" href="{{ "resume/" | relURL }}">View résumé</a></div>
+    <p class="hero-note">Cubist Systematic Strategies<br>PhD in Economics, Northwestern University</p>
+  </div>
+  {{ partial "network.html" . }}
 </section>
 
-<section class="bio">
-  {{ .Content }}
+<section class="software-section" id="software" aria-labelledby="software-title">
+  <div class="section-heading"><div><h2 id="software-title">Software with a purpose.</h2><p>Tools for the command line and the cutting room.</p></div><a class="text-link" href="{{ "projects/" | relURL }}">All software<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a></div>
+  <div class="projects-grid">{{ range hugo.Data.projects }}{{ partial "project.html" . }}{{ end }}</div>
 </section>
 
-<section class="social-links">
-  {{ with .Site.Params.github }}<a href="{{ . }}" class="btn" target="_blank" rel="noopener">GitHub</a>{{ end }}
-  {{ with .Site.Params.linkedin }}<a href="{{ . }}" class="btn" target="_blank" rel="noopener">LinkedIn</a>{{ end }}
-  <a href="{{ "resume/" | relURL }}" class="btn">Resume</a>
+<section class="research-section" aria-labelledby="research-title">
+  <div class="research-intro"><h2 id="research-title">Research <span>in economics.</span></h2><p>Production networks, financial markets, and the effects of economic policy.</p><a class="text-link" href="{{ "publications/" | relURL }}">All publications<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a></div>
+  <div class="research-list">{{ range where hugo.Data.publications "featured" true }}{{ partial "publication.html" . }}{{ end }}</div>
+</section>
+
+<section class="about-section" aria-labelledby="about-title">
+  <div><h2 id="about-title">A little background.</h2><a class="text-link" href="{{ .Site.Params.linkedin }}">Connect on LinkedIn<svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a></div>
+  <div class="bio">{{ .Content }}</div>
 </section>
 {{ end }}

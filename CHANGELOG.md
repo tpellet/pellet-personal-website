@@ -28,3 +28,13 @@
 ---
 
 *Append new entries below this line*
+
+## 2026-10-07 — Portfolio redesign
+
+- Redesigned the HTML layouts, typography, responsive navigation, and light/dark themes.
+- Added a research-inspired SVG interaction and locally served Motion animations with reduced-motion support.
+- Replaced inaccurate project cards with verified public software and explicit contribution attribution.
+- Added publication filters, structured publication data, portable résumé links, a useful 404 page, favicon, and social sharing preview.
+- Served licensed fonts locally and kept the résumé PDF unchanged.
+- Added TypeScript and Chromium, mobile, and WebKit browser gates for both GitHub Pages and root-domain output.
+- Pinned Hugo extended 0.165.0 and prepared Vercel and Cloudflare Pages hosting configuration.

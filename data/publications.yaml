@@ -1,0 +1,60 @@
+- title: Rigid Production Networks
+  featured: true
+  category: research
+  publication: Journal of Monetary Economics
+  year: 2023
+  detail: Volume 137, pages 86–102
+  authors: Thomas Pellet and Alireza Tahbaz-Salehi
+  description: How incomplete information and rigid production decisions shape the way shocks travel through an economy’s production network.
+  links:
+    - label: Journal article
+      url: https://www.sciencedirect.com/science/article/abs/pii/S030439322300051X
+    - label: Northwestern
+      url: https://www.kellogg.northwestern.edu/academics-research/research/detail/2023/rigid-production-networks/
+
+- title: A Year of Rising Dangerously? The U.S. Stock Market Performance in the Aftermath of the Presidential Election
+  category: research
+  publication: Journal of Policy Modeling
+  year: 2018
+  detail: Volume 40(3), pages 489–502
+  authors: Olivier Blanchard, Christopher G. Collins, Mohammad R. Jahan-Parvar, Thomas Pellet, and Beth Anne Wilson
+  description: Examining the roles of dividends, economic conditions, tax reform, and the equity risk premium in the stock market’s rise after the 2016 election.
+  links:
+    - label: Journal article
+      url: https://www.sciencedirect.com/science/article/abs/pii/S0161893818300528
+
+- title: Why Has the Stock Market Risen So Much Since the US Presidential Election?
+  category: research
+  publication: Federal Reserve Board
+  year: 2018
+  detail: International Finance Discussion Paper 1235
+  authors: Olivier Blanchard, Christopher G. Collins, Mohammad R. Jahan-Parvar, Thomas Pellet, and Beth Anne Wilson
+  description: A working paper on the drivers of U.S. equity returns between the 2016 presidential election and the end of 2017.
+  links:
+    - label: Working paper
+      url: https://www.federalreserve.gov/econres/ifdp/why-has-the-stock-market-risen-so-much-since-the-us-presidential-election.htm
+    - label: PIIE policy brief
+      url: https://www.piie.com/publications/policy-briefs/why-has-stock-market-risen-so-much-us-presidential-election
+
+- title: Sector Gains Are Uneven under 2017 Tax Law
+  featured: true
+  category: policy
+  publication: Peterson Institute for International Economics
+  year: 2018
+  detail: Policy Brief 18-18, September
+  authors: Thomas Pellet
+  description: An analysis of how the 2017 corporate tax changes affected profits and stock prices differently across sectors.
+  links:
+    - label: Read policy brief
+      url: https://www.piie.com/publications/policy-briefs/2018/sector-gains-are-uneven-under-2017-tax-law
+
+- title: "CBO and Markets Agree: The 2017 US Tax Act Will Not Raise Stock Prices Much"
+  category: policy
+  publication: RealTime Economic Issues Watch, PIIE
+  year: 2018
+  detail: April
+  authors: Thomas Pellet
+  description: Comparing market expectations with the Congressional Budget Office’s assessment of the 2017 tax legislation.
+  links:
+    - label: Read article
+      url: https://www.piie.com/blogs/realtime-economic-issues-watch/cbo-and-markets-agree-2017-us-tax-act-will-not-raise-stock
