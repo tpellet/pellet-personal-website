@@ -14,7 +14,7 @@
   kind: Developer tools
   role: Created by me
   visual: terminal
-  description: A command-line tool that finds the error in build output, or a test, branch, or commit from your description.
+  description: A command-line tool for finding the error in build output. It also finds a test, branch, or commit from your description.
   tech:
     - Rust
     - CLI

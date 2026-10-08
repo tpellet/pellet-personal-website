@@ -46,3 +46,4 @@
 - Revised public copy following an Astra xhigh review against original writing and editorial feedback: concrete definitions, work before credentials, and direct descriptions of the software.
 - Corrected the tax-policy research summary to describe estimated effects rather than realized causal effects.
 - Added browser coverage for Proofwise’s placement, artwork, and App Store link.
+- Applied unslop and de-slopify across public copy with an independent Astra xhigh pass; clarified navigation, jevify’s two functions, and the Northwestern publication link.
