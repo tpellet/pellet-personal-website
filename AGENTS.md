@@ -6,7 +6,7 @@ Personal portfolio site (Thomas Pellet): Hugo static site with a custom `minimal
 
 ## Toolchain: Hugo (extended)
 
-No version pin locally; CI (`.github/workflows/deploy.yml`) builds with `peaceiris/actions-hugo@v3`, `hugo-version: 'latest'`, `extended: true`. Use the extended Hugo binary.
+Use Hugo extended **0.165.0**. CI (`.github/workflows/deploy.yml`) pins this version with `peaceiris/actions-hugo@v3`, `extended: true`. Additional hosts must use the same `HUGO_VERSION` pin.
 
 ```bash
 hugo server          # local dev server with drafts
@@ -17,13 +17,15 @@ hugo --gc --minify   # production build, same flags as CI (output → public/)
 
 ## Compiler Checks (CRITICAL)
 
-There is no lint, formatter, or test suite in this repo. The only gate is a clean build:
+Required gates are a clean production build and the TypeScript Playwright browser suite (Node.js 24 or newer):
 
 ```bash
 hugo --gc --minify
+npm run typecheck
+npm run test:e2e
 ```
 
-Broken front matter, bad template syntax, or missing referenced assets surface here. Fix any error before pushing — a failed build breaks the deploy.
+Install dependencies with `npm install --ignore-scripts` and browsers with `PLAYWRIGHT_SKIP_BROWSER_GC=1 npx playwright install chromium webkit` when needed. Browser checks cover both path-prefix and root-domain builds in CI before deployment. Follow README for the root-domain local check. Fix any error before pushing — a failed gate blocks deployment. Preserve attempt directories; never delete files to clean up.
 
 ---
 
@@ -39,9 +41,11 @@ Layout:
 - `static/` — verbatim assets: `js/theme-toggle.js`, `resume.pdf`, `resume/curriculum_vitae_Thomas_Pellet.pdf`
 - `public/` — build output, gitignored; never edit it
 - `resources/_gen/` — Hugo asset cache, gitignored
+- `tests/`, `playwright.config.ts` — browser behavior checks against generated production output
+- `vercel.json`, `static/_headers` — optional-host deployment settings; account connections are separate
 
 Domain rules:
 
-- **Path prefix matters:** the site is served under `/pellet-personal-website/`. Hardcoded absolute links must include it — `content/resume.md` already hardcodes `/pellet-personal-website/resume/...` (raw HTML is allowed via `unsafe = true` in `hugo.toml`).
-- **Resume is copied, not synced:** `static/resume/curriculum_vitae_Thomas_Pellet.pdf` is a manual copy of the canonical PDF in the Interviews repo (per README). Updating the resume = replace that file; no automation exists.
+- **Path prefix matters:** GitHub Pages serves `/pellet-personal-website/`; Vercel and Cloudflare/custom domains serve the root. Use Hugo `relURL` for internal links and assets, and select the host's canonical `baseURL` at build time. Do not hardcode the Pages prefix into templates or content.
+- **Resume is copied, not synced:** `static/resume/curriculum_vitae_Thomas_Pellet.pdf` is a manually maintained copy. Updating the resume means replacing that file; no automation exists.
 - **Deploy:** push to `main` triggers `.github/workflows/deploy.yml` (build → upload `./public` → GitHub Pages). No manual deploy step.

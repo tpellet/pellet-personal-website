@@ -16,3 +16,11 @@ Thumbs.db
 # Temporary
 *.tmp
 *.temp
+
+# Browser checks and alternate build output
+/node_modules/
+/test-results/
+/playwright-report/
+/public-root/
+/.vercel/
+/.wrangler/
